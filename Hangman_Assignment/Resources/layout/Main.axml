@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMainPlay"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/_playnow" />
+    <ImageView
+        android:src="@drawable/splashimage"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_above="@id/buttonMainPlay"
+        android:id="@+id/imageView1"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imageView1"
+        android:id="@+id/editTextInputName"
+        android:hint="Enter Your Name"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:maxLength="15"
+        android:singleLine="true" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_above="@id/editTextInputName"
+        android:id="@+id/imageViewMenuBanner"
+        android:layout_centerInParent="true"
+        android:padding="25dp" />
+    <TextView
+        android:text="HANGMAN"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewMenuBanner"
+        android:id="@+id/textView1"
+        android:alpha="0.7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp" />
+</RelativeLayout>
